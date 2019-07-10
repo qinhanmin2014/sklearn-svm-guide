@@ -31,6 +31,7 @@ print(np.mean(scores), "+/-", np.std(scores))
 ## experiment A: Examples of the Proposed Procedure
 
 - Datasets 1: Astroparticle (from the reference)
+  * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/A1_Astroparticle_Physics.ipynb)
   *  evaluate using test set accuracy
   *  default in libsvm and old default in scikit-learn: 66.93% (66.93% in the reference)
   *  new default in scikit=learn: 96.25%
@@ -40,6 +41,7 @@ print(np.mean(scores), "+/-", np.std(scores))
   *  scale with StandardScaler & tune the parameters: 96.68%
 
 - Datasets 2: Bioinformatics (from the reference)
+  * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/A2_Bioinformatics.ipynb)
   *  evaluate using cross validation accuracy
   *  default in libsvm and old default in scikit-learn: 56.53% (56.52% in the reference)
   *  new default in scikit=learn: 81.87%
@@ -49,6 +51,7 @@ print(np.mean(scores), "+/-", np.std(scores))
   *  scale with StandardScaler & tune the parameters: 84.15%
 
 - Datasets 3: Astroparticle (from the reference)
+  * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/A3_Vehicle.ipynb)
   *  evaluate using test set accuracy
   *  default in libsvm and old default in scikit-learn: 2.44% (2.44% in the reference)
   *  new default in scikit=learn: 36.59%
@@ -58,6 +61,7 @@ print(np.mean(scores), "+/-", np.std(scores))
   *  scale with StandardScaler & tune the parameters: 78.05%
 
 - Datasets 4: Bioinformatics (from sklearn.datasets.load_digits)
+  * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/AX_Digits.ipynb)
   *  evaluate using cross validation accuracy
   *  default in libsvm and old default in scikit-learn: 44.88%
   *  new default in scikit=learn: 96.38%
@@ -70,3 +74,4 @@ print(np.mean(scores), "+/-", np.std(scores))
 ## reference
 
 - A Practical Guide to Support Vector Classification, Chih-Wei Hsu et al.
+- https://www.csie.ntu.edu.tw/~cjlin/libsvm/
