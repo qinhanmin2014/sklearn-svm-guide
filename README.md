@@ -98,7 +98,7 @@ print(np.mean(scores), "+/-", np.std(scores))
   * right way: use same scaler for training and testing sets (MinMaxScaler): 87.50% (89.42% in the reference)
   * **right way: use same scaler for training and testing sets (StandardScaler): 89.42%**
 
-## When to Use Linear but not RBF Kernel
+## experiment C: When to Use Linear but not RBF Kernel
 
 - Number of instances << number of features
   * suggestion: use linear kernel
@@ -121,6 +121,11 @@ print(np.mean(scores), "+/-", np.std(scores))
 ## reference
 
 - A Practical Guide to Support Vector Classification, Chih-Wei Hsu et al.
+
+## LIBLINEAR
+
+- https://www.csie.ntu.edu.tw/~cjlin/liblinear/
+- https://github.com/cjlin1/liblinear
 
 ## LIBSVM
 
