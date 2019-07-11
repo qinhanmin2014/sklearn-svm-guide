@@ -98,8 +98,31 @@ print(np.mean(scores), "+/-", np.std(scores))
   * right way: use same scaler for training and testing sets (MinMaxScaler): 87.50% (89.42% in the reference)
   * **right way: use same scaler for training and testing sets (StandardScaler): 89.42%**
 
+## When to Use Linear but not RBF Kernel
+
+- Number of instances << number of features
+  * suggestion: use linear kernel
+  * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/C1_Linear_not_RBF_Kernel.ipynb)
+  * RBF kernel cross validation accuracy 92.85% (97.22% in the reference)
+  * linear kernel cross validation accuracy 92.85% (98.61% in the reference)
+
+- Both numbers of instances and features are large
+  * suggestion: use linear kernel
+  * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/C2_Linear_not_RBF_Kernel.ipynb)
+  * RBF kernel, cross validation accuracy 97.17% (96.81% in the reference), wall time 15min 17s
+  * linear kernel, corss validation accuracy 96.63% (97.01% in the reference), wall time <1s
+
+- Number of instances >> number of features
+  * suggestion: if linear kernel, set dual=False (default dual=True)
+  * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/C3_Linear_not_RBF_Kernel.ipynb)
+  * dual=False, cross validation accuracy 68.51% (75.67% in the reference), wall time 35s
+  * dual=True, corss validation accuracy 68.51% (75.67% in the reference), wall time 10min 31s
+
 ## reference
 
 - A Practical Guide to Support Vector Classification, Chih-Wei Hsu et al.
+
+## LIBSVM
+
 - https://www.csie.ntu.edu.tw/~cjlin/libsvm/
 - https://github.com/cjlin1/libsvm
