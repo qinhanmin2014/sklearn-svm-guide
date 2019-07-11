@@ -60,7 +60,17 @@ print(np.mean(scores), "+/-", np.std(scores))
   *  scale with StandardScaler: 65.85%
   *  scale with StandardScaler & tune the parameters: 78.05%
 
-- Datasets 4: Bioinformatics (from sklearn.datasets.load_digits)
+- Datasets 4: Breast Cancer (from sklearn.datasets.load_breast_cancer)
+  * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/AX_Breast_Cancer.ipynb)
+  *  evaluate using cross validation accuracy
+  *  default in libsvm and old default in scikit-learn: 62.74%
+  *  new default in scikit=learn: 91.24%
+  *  scale with MinMaxScaler: 96.13%
+  *  scale with MinMaxScaler & tune the parameters: 97.54%
+  *  **scale with StandardScaler: 97.54%**
+  *  scale with StandardScaler & tune the parameters: 96.66%
+
+- Datasets 5: Digits (from sklearn.datasets.load_digits)
   * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/AX_Digits.ipynb)
   *  evaluate using cross validation accuracy
   *  default in libsvm and old default in scikit-learn: 44.88%
@@ -69,6 +79,16 @@ print(np.mean(scores), "+/-", np.std(scores))
   *  **scale with MinMaxScaler & tune the parameters: 97.33%**
   *  scale with StandardScaler: 94.88%
   *  scale with StandardScaler & tune the parameters: 94.77%
+
+- Datasets 6: Wine (from sklearn.datasets.load_wine)
+  * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/AX_Wine.ipynb)
+  *  evaluate using cross validation accuracy
+  *  default in libsvm and old default in scikit-learn: 42.77%
+  *  new default in scikit=learn: 66.39%
+  *  scale with MinMaxScaler: 96.68%
+  *  scale with MinMaxScaler & tune the parameters: 96.68%
+  *  **scale with StandardScaler: 98.33%**
+  *  scale with StandardScaler & tune the parameters: 97.76%
 
 ## experiment B: Common Mistakes in Scaling Training and Testing Data
   * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/B_Common_Mistakes_in_Scaling.ipynb)
