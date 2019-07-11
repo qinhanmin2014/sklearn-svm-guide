@@ -70,8 +70,16 @@ print(np.mean(scores), "+/-", np.std(scores))
   *  scale with StandardScaler: 94.88%
   *  scale with StandardScaler & tune the parameters: 94.77%
 
+## experiment B: Common Mistakes in Scaling Training and Testing Data
+  * [jupyter notebook](https://nbviewer.jupyter.org/github/qinhanmin2014/sklearn-svm-guide/blob/master/B_Common_Mistakes_in_Scaling.ipynb)
+  *  evaluate using test set accuracy
+  * wrong way: use different scaler for training and testing sets (MinMaxScaler): 69.23% (69.23% in the reference)
+  * wrong way: use different scaler for training and testing sets (StandardScaler): 78.21%
+  * right way: use same scaler for training and testing sets (MinMaxScaler): 87.50% (89.42% in the reference)
+  * **right way: use same scaler for training and testing sets (StandardScaler): 89.42%**
 
 ## reference
 
 - A Practical Guide to Support Vector Classification, Chih-Wei Hsu et al.
 - https://www.csie.ntu.edu.tw/~cjlin/libsvm/
+- https://github.com/cjlin1/libsvm
