@@ -118,9 +118,21 @@ print(np.mean(scores), "+/-", np.std(scores))
   * dual=False, cross validation accuracy 68.51% (75.67% in the reference), wall time 35s
   * dual=True, corss validation accuracy 68.51% (75.67% in the reference), wall time 10min 31s
 
+## experiment D: LIBLINEAR (LinearSVC)
+
+- In classification, large values in data may cause the following problems:
+  (1) Features in larger numeric ranges may dominate those in smaller ranges;
+  (2) Optimization methods for training may take longer time.
+  The typical remedy is to scale data feature-wisely.
+  However, for document data, often a simple instance-wise normalization is enough.
+  Each instance becomes a unit vector
+- Solvers in LIBLINEAR is not very sensitive to C. Once C is larger than certain value, the obtained models have similar performances.
+
 ## reference
 
 - A Practical Guide to Support Vector Classification, Chih-Wei Hsu et al.
+- LIBLINEAR: A Library for Large Linear Classification, Rong-En Fan et al.
+- LIBSVM: A Library for Support Vector Machines, Chih-Chung Chang et al.
 
 ## LIBLINEAR
 

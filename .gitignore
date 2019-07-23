@@ -1,0 +1,5 @@
+.ipynb_checkpoints/*
+datasets/covtype.libsvm.binary.scale
+datasets/rcv1_test.binary
+datasets/rcv1_test.binary.bz2
+datasets/rcv1_train.binary
